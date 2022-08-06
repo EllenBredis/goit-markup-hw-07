@@ -1,0 +1,44 @@
+.benefits {
+@include section()
+}
+
+.benefits__icon-list {
+    @extend %reset-list;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+
+  }
+
+.benefits__icon-item {
+    display: inline-flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: $BgColorLight;
+}
+
+.benefits__list {
+    @extend %reset-list;
+    display: flex;
+    gap: 30px;
+    flex-basis: 270px;
+}
+
+.benefits__item {
+    max-width: 270px;
+}
+
+.benefits__subtitle {
+    margin-bottom: 10px;
+
+    @include fonts(14px, 16px, 700);
+    text-transform: uppercase;
+}
+
+.benefits__desc {
+    color: $SecondaryTextColor;
+    @include fonts(14px, 24px);
+    
+}

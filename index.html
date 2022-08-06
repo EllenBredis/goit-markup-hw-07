@@ -16,44 +16,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./styles/styles.css" /> -->
   </head>
 
   <body>
     <!--Header-->
     <header class="header">
       <div class="conteiner header__conteiner">
-        <a href="/" class="link logo header__logo"
+        <a href="/" class="logo header__logo"
           ><span class="logo__title">Web</span>Studio</a
         >
 
         <nav class="nav">
-          <ul class="nav__list list">
+          <ul class="nav__list">
             <li class="nav__item">
-              <a class="link nav__link nav__link--current" href="">Студия</a>
+              <a class="nav__link nav__link--current" href="">Студия</a>
             </li>
             <li class="nav__item">
-              <a class="link nav__link" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav__item">
-              <a class="link nav__link" href="">Контакты</a>
+              <a class="nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="header-contacts list">
+        <ul class="header-contacts">
           <li class="header-contacts__item">
-            <a
-              class="link header-contacts__link"
-              href="mailto:info@devstudio.com"
-            >
+            <a class="header-contacts__link" href="mailto:info@devstudio.com">
               <svg class="header-contacts__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="header-contacts__item">
-            <a class="link header-contacts__link" href="tel:+380961111111">
+            <a class="header-contacts__link" href="tel:+380961111111">
               <svg class="header-contacts__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11
@@ -67,7 +65,7 @@
       <!--Hero-->
       <section class="hero">
         <div class="conteiner hero__conteiner">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="btn" type="button" data-modal-open>
             Заказать услугу
           </button>
@@ -75,11 +73,11 @@
       </section>
 
       <!--Преимущества работы-->
-      <section class="benefits section">
+      <section class="benefits">
         <div class="conteiner">
           <h2 class="visually-hidden">Преимущества</h2>
           <!-- Убрать визуально название секции -->
-          <ul class="list benefits__icon-list">
+          <ul class="benefits__icon-list">
             <li class="benefits__icon-item">
               <svg class="benefits-icon" width="70px" height="70px">
                 <use href="./images/icons.svg#icon-antenna"></use>
@@ -102,7 +100,7 @@
             </li>
           </ul>
 
-          <ul class="benefits__list list">
+          <ul class="benefits__list">
             <li class="benefits__item">
               <h3 class="benefits__subtitle">Внимание к деталям</h3>
               <p class="benefits__desc">
@@ -136,13 +134,13 @@
       </section>
 
       <!--Чем мы занимаемся-->
-      <section class="about section">
+      <section class="about">
         <div class="conteiner">
-          <h2 class="about__title section-title">Чем мы занимаемся</h2>
-          <ul class="about__list list">
+          <h2 class="about__title">Чем мы занимаемся</h2>
+          <ul class="about__list">
             <li class="about__item">
               <img
-                class="about__img img"
+                class="about__img"
                 src="./images/images-main/img1.jpg"
                 alt="Руки на клавиатуре за планшетом"
                 width="370"
@@ -152,7 +150,7 @@
             </li>
             <li class="about__item">
               <img
-                class="about__img img"
+                class="about__img"
                 src="./images/images-main/img2.jpg"
                 alt="Человек за ноутбуком в руках телефон"
                 width="370"
@@ -162,7 +160,7 @@
             </li>
             <li class="about__item">
               <img
-                class="about__img img"
+                class="about__img"
                 src="./images/images-main/img3.jpg"
                 alt="Руки с планшетом"
                 width="370"
@@ -175,13 +173,13 @@
       </section>
 
       <!--Наша команда-->
-      <section class="team section">
+      <section class="team">
         <div class="conteiner">
-          <h2 class="team__title section-title">Наша команда</h2>
-          <ul class="team__list list">
+          <h2 class="team__title">Наша команда</h2>
+          <ul class="team__list">
             <li class="team__item">
               <img
-                class="team__img img"
+                class="team__img"
                 src="./images/images-main/Igor.jpg"
                 alt="Фотография Игоря"
                 width="270"
@@ -189,8 +187,8 @@
               />
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
-                <p class="team__desc">Product Designer</p>
-                <ul class="socials list">
+                <p class="team__desc" lang="en">Product Designer</p>
+                <ul class="socials">
                   <li class="socials__item">
                     <a
                       class="socials__link"
@@ -248,7 +246,7 @@
             </li>
             <li class="team__item">
               <img
-                class="team__img img"
+                class="team__img"
                 src="./images/images-main/Olga.jpg"
                 alt="Фотография Ольги"
                 width="270"
@@ -256,8 +254,8 @@
               />
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Ольга Репина</h3>
-                <p class="team__desc">Frontend Developer</p>
-                <ul class="socials list">
+                <p class="team__desc" lang="en">Frontend Developer</p>
+                <ul class="socials">
                   <li class="socials__item">
                     <a
                       class="socials__link"
@@ -315,7 +313,7 @@
             </li>
             <li class="team__item">
               <img
-                class="team__img img"
+                class="team__img"
                 src="./images/images-main/Nikolai.jpg"
                 alt="Фотография Николая"
                 width="270"
@@ -323,8 +321,8 @@
               />
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Николай Тарасов</h3>
-                <p class="team__desc">Marketing</p>
-                <ul class="socials list">
+                <p class="team__desc" lang="en">Marketing</p>
+                <ul class="socials">
                   <li class="socials__item">
                     <a
                       class="socials__link"
@@ -380,7 +378,7 @@
             </li>
             <li class="team__item">
               <img
-                class="team__img img"
+                class="team__img"
                 src="./images/images-main/Michael.jpg"
                 alt="Фотография Михаила"
                 width="270"
@@ -388,8 +386,8 @@
               />
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Михаил Ермаков</h3>
-                <p class="team__desc">UI Designer</p>
-                <ul class="socials list">
+                <p class="team__desc" lang="en">UI Designer</p>
+                <ul class="socials">
                   <li class="socials__item">
                     <a
                       class="socials__link"
@@ -449,10 +447,10 @@
     </main>
 
     <!-- Постоянные клиенты -->
-    <section class="clients section">
+    <section class="clients">
       <div class="conteiner">
-        <h2 class="clients__title section-title">Постоянные клиенты</h2>
-        <ul class="clients__list list">
+        <h2 class="clients__title">Постоянные клиенты</h2>
+        <ul class="clients__list">
           <li class="clients__item">
             <a
               class="clients__icon"
@@ -532,12 +530,12 @@
     <!--Footer-->
     <footer class="footer">
       <div class="footer__conteiner conteiner">
-        <div class="footer-group">
-          <a href="/" class="link logo footer__logo">
+        <div class="footer__group-left">
+          <a href="/" class="logo footer__logo">
             <span class="logo__title">Web</span>Studio</a
           >
           <address class="footer-contacts">
-            <ul class="footer-contacts__list list">
+            <ul class="footer-contacts__list">
               <li class="footer-contacts__item">
                 <a
                   class="link footer-contacts__link footer-contacts__link--inverse"
@@ -549,13 +547,13 @@
               </li>
               <li class="footer-contacts__item">
                 <a
-                  class="link footer-contacts__link"
+                  class="footer-contacts__link"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="footer-contacts__item">
-                <a class="link footer-contacts__link" href="tel:+380961111111"
+                <a class="footer-contacts__link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -563,9 +561,9 @@
           </address>
         </div>
 
-        <div class="footer-socials">
+        <div class="footer__group-middle">
           <p class="footer__subtitle">присоединяйтесь</p>
-          <ul class="socials list">
+          <ul class="socials">
             <li class="socials__item">
               <a
                 class="socials__link socials__link--inverse"
@@ -637,7 +635,7 @@
           </ul>
         </div>
 
-        <div class="footer-subscription">
+        <div class="footer-group-right">
           <p class="footer__subtitle">Подпишитесь на рассылку</p>
           <form class="form-subscription">
             <input
@@ -697,7 +695,11 @@
 
           <label class="form__field">
             <span class="form__lable">Комментарий</span>
-            <textarea name="comment" placeholder="Введите текст"></textarea>
+            <textarea
+              class="form__textarea"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
           </label>
 
           <label class="form-checkbox">

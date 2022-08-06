@@ -1,0 +1,29 @@
+.footer-contacts__list {
+    @extend %reset-list;
+    font-style: normal;
+}
+
+.footer-contacts__item {
+    margin-bottom: 9px;
+
+    &:last-child {
+            margin-bottom: 0;
+        }
+}
+
+.footer-contacts__link {
+    @extend %reset-link;
+    color: $TextColorLight;
+    @include fonts(14px, 24px);
+    
+    @include transition-base (color);
+   
+    &--inverse {
+            color: $MainColor;
+        }
+    
+    &:hover,
+    &:focus {
+            color: $AccentColor;
+        }
+}

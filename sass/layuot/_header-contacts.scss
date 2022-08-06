@@ -1,0 +1,32 @@
+.header-contacts {
+    @extend %reset-list;
+    display: flex;
+    gap: 30px;
+}
+
+.header-contacts__item {
+    display: inline-flex;
+}
+
+.header-contacts__link {
+    @extend %reset-link;
+    display: inline-flex;
+    align-items: center;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $SecondaryTextColor;
+    @include fonts(14px, 16px, 500, 0.02em);
+    @include transition-base (color);
+   
+     &:hover,
+     &:focus {
+    color: $AccentColor;
+     }
+}
+
+.header-contacts__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}

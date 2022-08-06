@@ -1,0 +1,24 @@
+.logo {
+    @extend %reset-link;
+    display: block;
+    color: $TextColorDark;
+    font-family: $SecondaryFontFamily;
+
+    @include fonts(26px, 31px, 700);
+    
+&__title {
+    color:$AccentColor;
+}
+}
+
+.header__logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    padding: 0;
+    color: $MainColor;
+}

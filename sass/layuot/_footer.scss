@@ -1,0 +1,34 @@
+.footer {
+    @include section (60px,60px);
+    background-color: $BgColorSecondary;
+    margin: auto;
+
+    &__conteiner {
+            display: flex;
+            justify-content: center;
+        }
+    
+    }
+
+
+.footer__group-left {
+    margin-right: 70px;
+}
+
+.footer__group-middle {
+    margin-right: 93px;
+}
+
+.footer__subtitle {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-top: 12px;
+
+    @include fonts(14px, 16px, 700);
+    text-transform: uppercase;
+    color: $MainColor;
+}
+
+.footer__group-right {
+    display: inline-block;
+}

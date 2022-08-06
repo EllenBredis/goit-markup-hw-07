@@ -1,0 +1,31 @@
+.clients {
+    @include section ();
+}
+.clients__title{
+    @extend %section-title;
+}
+
+.clients__list {
+    @extend %reset-list;
+    display: flex;
+    gap: 30px;
+}
+
+.clients__icon {
+    fill: $IconsColor;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $SecondaryBorderColor;
+
+    @include transition-base (fill border);
+    
+    &:hover,
+    &:focus {
+            fill: $AccentColor;
+            border: 1px solid $AccentColor;
+            }
+}
+

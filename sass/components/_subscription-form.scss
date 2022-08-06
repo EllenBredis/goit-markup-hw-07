@@ -11,6 +11,7 @@
     background-color: transparent;
     border: 1px solid $FormBorderColor;
     color: $MainColor;
+    
 
     @include transition-base (border);
     
@@ -19,15 +20,6 @@
         color: $PlaceholderSbscTextColor;
     }
 
-    &:-webkit-autofill,
-    &:-webkit-autofill:hover,
-    &:-webkit-autofill:focus {
-            -webkit-text-fill-color: $BgColorDark;
-            -webkit-autofill: 0 0 0px 1000px $TextColorDark inset;
-    
-            @include transition-base (background-color);
-        }
-    
     &:hover,
     &:focus {
             border: 1px solid $AccentColor;
